@@ -4,7 +4,6 @@
     <id>org.pecker.writetex</id>
 	<dependency type="executable" location="extensions">eqtexsvg.py</dependency>
 	<dependency type="executable" location="extensions">inkex.py</dependency>
-	<dependency type="executable" location="path">xelatex</dependency>
 	<param name="preamble" type="string" _gui-text="Preamble File: "></param>
 	<param name="read-as-line" type="boolean" _gui-text="Trade above as contents">false</param>
 	<param name="scale" type="float" precision="2" min="0.1" max="50" _gui-text="Scale Factor">1</param>
@@ -19,10 +18,6 @@
 		<page name="viewold" _gui-text="View OLD Text">
 			<_param name="old" type="description">Choose this tab if you would like to see the old TeX string.</_param>
 		</page>
-	</param>
-	<param name="pdftosvg" type="enum" _gui-text="PDF to SVG converter: ">
-		<_item value="1">PDF2SVG</_item>
-		<_item value="2">PStoEDIT</_item>
 	</param>
     <effect>
                 <object-type>all</object-type>
